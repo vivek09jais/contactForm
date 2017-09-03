@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="company-info">
+                <h2>Contact Form</h2>
+                <ul>
+                    <li><i class="fa fa-address-book" aria-hidden="true"></i>44 Streat plot</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>(456) 345-7652</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>Vivekkumar@map.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Email Us</h3>
+
+                <div class="alert">Your message has been sent..</div>
+
+                <form id="ContactForm">
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name">
+                    </p>
+                    <p>
+                        <label>Company</label>
+                        <input type="text" name="company" id="company">
+                    </p>
+                    <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="number" name="phone" id="phone" maxlength=10>
+                    </p>
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" id="message"></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit">submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
